@@ -1,2 +1,3 @@
 mlflow_env/
 notebook/models/
+artifact_store/
