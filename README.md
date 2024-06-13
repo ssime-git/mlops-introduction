@@ -10,7 +10,7 @@ python -m venv mlflow_env
 source mlflow_env/bin/activate
 
 # install mlflow
-pip install mlflow
+pip install -r requirements.txt
 
 # create a dire (the plce to store our metrics)
 mkdir metrics_store

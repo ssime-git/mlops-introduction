@@ -1,0 +1,10 @@
+torch
+transformers
+datasets
+mlflow
+setuptools
+pandas
+plotly
+scikit-learn
+numpy
+tqdm
