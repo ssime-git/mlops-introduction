@@ -7,7 +7,7 @@
 python -m venv mlflow_env
 
 # activate the venv
-source mlflow_venv/bin/activate
+source mlflow_env/bin/activate
 
 # install mlflow
 pip install mlflow
