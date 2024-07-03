@@ -1,3 +1,4 @@
+modal
 torch
 transformers
 datasets
@@ -8,3 +9,4 @@ plotly
 scikit-learn
 numpy
 tqdm
+dagshub
