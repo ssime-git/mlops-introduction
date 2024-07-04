@@ -2,3 +2,4 @@ mlflow_env/
 notebook/models/
 artifact_store/
 __pycache__/
+.env

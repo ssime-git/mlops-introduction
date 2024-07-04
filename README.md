@@ -19,6 +19,9 @@ mkdir metrics_store
 
 # a place for the artefact
 mkdire artifact_store
+
+# if you want to use model
+python -m modal setup
 ```
 
 ## Getting start
@@ -32,7 +35,7 @@ Now we are ready to start the MLFLOW serveur that will hold all our ML experimen
 mlflow server --backend-store-uri sqlite:///./metrics_store/mlflow.db --default-artifact-root ./artifact_store/
 ```
 
-### running MLFLOW remotely on modal
+### running MLFLOW remotely on modal (ONGOING - Not functional at the moment)
 
 When using Modal for MLflow, you don't need to set up external databases or storage services. Modal provides persistent storage that you can use for both the tracking database and artifacts. Here's how you can set it up:
 
@@ -117,7 +120,3 @@ This setup uses Modal exclusively:
 - The MLflow tracking server runs on Modal.
 - The tracking database and artifacts are stored in a Modal volume.
 - Your experiments can be run on Modal and log to the Modal-hosted MLflow server.
-
-Remember to replace "https://your-modal-mlflow-server-url" with the actual URL Modal provides when you deploy the MLflow server.
-
-This approach leverages Modal's infrastructure for both compute and storage, simplifying your MLflow setup and management.

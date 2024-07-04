@@ -10,3 +10,4 @@ scikit-learn
 numpy
 tqdm
 dagshub
+python-dotenv
